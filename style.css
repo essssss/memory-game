@@ -1,0 +1,118 @@
+body {
+  background-color: rgb(35, 31, 32);
+  color: #8ca4a6;
+  font-family: "Raleway", sans-serif;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  background-color: #8ca4a6;
+  border: 6px solid #8ca4a6;
+  border-radius: 7px;
+  color: rgb(35, 31, 32);
+  font-size: 24px;
+  padding: 5px;
+  align-self: center;
+}
+button:hover {
+  border-color: #96aeb0;
+  background-color: #96aeb0;
+  cursor: pointer;
+}
+
+#game div {
+  border: 8px solid #607b7d;
+  width: 15%;
+  height: 200px;
+  margin: 10px;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+#game div:hover {
+  border: 8px solid #c5d2d3;
+  cursor: pointer;
+}
+
+div .green.visible {
+  background-color: #f46036;
+}
+
+div .red.visible {
+  background-color: #00c2d1;
+}
+
+div.blue.visible {
+  background-color: #f9e900;
+}
+
+div.purple.visible {
+  background-color: #5c7aff;
+}
+
+div.orange.visible {
+  background-color: #ed33b9;
+}
+
+div .green.completed {
+  background-color: #f46036;
+}
+
+div .red.completed {
+  background-color: #00c2d1;
+}
+
+div.blue.completed {
+  background-color: #f9e900;
+}
+
+div.purple.completed {
+  background-color: #5c7aff;
+}
+
+div.orange.completed {
+  background-color: #ed33b9;
+}
+
+#win {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(100, 100, 100, 0.5);
+  z-index: 2;
+  font-size: 60px;
+  padding-top: 100px;
+  justify-content: center;
+}
+
+#win > div {
+  border: 6px solid #607b7d;
+
+  border-radius: 15px;
+  margin: auto;
+  padding: 80px 0px 80px;
+  background-color: #c9ebee;
+  width: 500px;
+  display: block;
+  text-align: center;
+}
