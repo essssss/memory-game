@@ -98,14 +98,10 @@ function handleCardClick(event) {
           clickCounter = 0;
           completionCounter++;
           if (completionCounter === 5) {
-<<<<<<< Updated upstream
-            winCondition();
-=======
             completionCounter = 0;
             alert("YOU WIN!");
             gameContainer = "";
             setTimeout(createDivsForColors(shuffledColors), 5000);
->>>>>>> Stashed changes
           }
         } else {
           console.log("you just clicked", event.target.className);
